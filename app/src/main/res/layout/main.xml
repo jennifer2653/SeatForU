@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/rToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+
+        <ImageButton
+            android:id="@+id/btn_reserve"
+            android:layout_width="320dp"
+            android:layout_height="213dp"
+            android:src="@drawable/reserve"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_mypage"
+            android:layout_width="320dp"
+            android:layout_height="213dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/mypage" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

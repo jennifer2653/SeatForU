@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/rToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지하철 노선도 보기"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="408dp">
+
+            <Button
+                android:id="@+id/btn_all"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="전체노선"/>
+
+            <Button
+                android:id="@+id/btn_only2"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="7dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="2호선"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView_subway"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/subway" />
+
+    </LinearLayout>
+
+</RelativeLayout>
